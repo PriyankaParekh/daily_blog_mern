@@ -43,9 +43,9 @@ app.get("/", function(_, res) {
         }
     );
 });
-app.use('/blog', require('./router/Register'));
-app.use('/blog', require('./router/DisplayBlog'));
-app.use('/blog', require('./router/ContactData'));
+app.use('/', require('./router/Register'));
+app.use('/', require('./router/DisplayBlog'));
+app.use('/', require('./router/ContactData'));
 
 
 //app.listen(PORT, () => {
